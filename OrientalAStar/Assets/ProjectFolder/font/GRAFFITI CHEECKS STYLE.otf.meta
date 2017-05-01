@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 3a4fd9bffe6ad8c4fb3ab06af8533f62
+timeCreated: 1483855061
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: GRAFFITI CHEECKS STYLE - URBAN
+  fontNames:
+  - GRAFFITI CHEECKS STYLE - URBAN
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

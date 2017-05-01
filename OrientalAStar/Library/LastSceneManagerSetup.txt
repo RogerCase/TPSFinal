@@ -1,0 +1,4 @@
+sceneSetups:
+- path: Assets/DB/Scenes/4_Astar_Window.unity
+  isLoaded: 1
+  isActive: 1
