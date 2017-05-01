@@ -9,13 +9,21 @@ public class PlaceCar : MonoBehaviour
 	float up_player=2.0f;
 	[SerializeField]
 	ThirdPersonCamera_M camera=null;
-
+	public int Start_Index_I, Start_Index_J, End_Index_I, End_Index_J;
 	// Use this for initialization
 	void Start ()
 	{
 		root = GameObject.FindWithTag ("rootScene").GetComponent<rootScene>();
 
 	//	root.transform.GetComponent<AudioSource> ().enabled = false;
+
+
+
+		Start_Index_I=Game_Controller.Instance.indexingEnemies[0].Start_E_I;
+		Start_Index_J=Game_Controller.Instance.indexingEnemies[0].Start_E_J;
+
+		End_Index_I=Game_Controller.Instance.indexingEnemies[0].End_E_I;
+		End_Index_J=Game_Controller.Instance.indexingEnemies[0].End_E_J;
 
 
 		Game_Controller.Instance.TPSobjects = new CharacterControllerLogic_T[ Game_Controller.Instance.number_of_TPS];
@@ -41,23 +49,30 @@ public class PlaceCar : MonoBehaviour
 							Game_Controller.Instance.TPSobjects [playercount] = Instantiate (Game_Controller.Instance.TPSobject) as CharacterControllerLogic_T;
 
 							Game_Controller.Instance.TPSobjects [playercount].transform.tag = "player";
+							Game_Controller.Instance.TPSobjects [playercount].transform.name = "z_player";
 							camera.follow = Game_Controller.Instance.TPSobjects [playercount].transform;
 							camera.start_Follow = true;
 							//.Instance.TPSobjects [playercount].GetComponent<ThirdPersonCamera_M> ().start_Follow 
 							//Game_Controller.Instance.TPSobjects [playercount].GetComponent<ThirdPersonCamera_M> ().start_Follow = true;
-
-
+							 
+							Game_Controller.Instance.TPSobjects [playercount].transform.position = root.data.rows [Start_Index_I].col [Start_Index_J].transform.GetChild (0).transform.position+
+								root.data.rows [Start_Index_I].col [Start_Index_J].transform.GetChild (0).transform.up*up_player;
 
 						} 
 						else
 						{
 							Game_Controller.Instance.TPSobjects [playercount] = Instantiate (Game_Controller.Instance.TPSobjectE) as CharacterControllerLogic_T;
 							Game_Controller.Instance.TPSobjects [playercount].transform.tag = "enemy";
+							Game_Controller.Instance.TPSobjects [playercount].transform.name = "z_enemy";
 
+							Game_Controller.Instance.TPSobjects [playercount].transform.position = root.data.rows [End_Index_I].col [End_Index_J].transform.GetChild (0).transform.position+
+								root.data.rows [End_Index_I].col [End_Index_J].transform.GetChild (0).transform.up*up_player;
+							Game_Controller.Instance.TPSobjects [playercount].GetComponent<AIforTPS> ().playerIndex = playercount;
+							Game_Controller.Instance.TPSobjects [playercount].GetComponent<AIforTPS> ().target = camera.follow;
+						
 						}//first if 
 
-						Game_Controller.Instance.TPSobjects [playercount].transform.position = root.data.rows [i].col [j].transform.GetChild (0).transform.position+
-							root.data.rows [i].col [j].transform.GetChild (0).transform.up*up_player;
+
 						
 						playercount++;
 					}//second if 

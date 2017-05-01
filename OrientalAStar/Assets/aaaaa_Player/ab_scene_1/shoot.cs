@@ -32,9 +32,9 @@ public class shoot : MonoBehaviour
 		 
 		animator = GetComponent<Animator> ();
 
-		if(repeatFire)	
+		//if(repeatFire)	
 
-		StartCoroutine( RepeatingFunction() );
+		//StartCoroutine( RepeatingFunction() );
 	}
 
 	IEnumerator RepeatingFunction () 
@@ -57,9 +57,9 @@ public class shoot : MonoBehaviour
  {
 		current_fire_time=Time.time;
 		
-		if(current_fire_time-last_fire_time>interval_fire_time)
-		{
-			last_fire_time= current_fire_time;
+		//if(current_fire_time-last_fire_time>interval_fire_time)
+		//{
+		//	last_fire_time= current_fire_time;
 			
 			
 			/*
@@ -74,9 +74,9 @@ public class shoot : MonoBehaviour
 				                                 this.transform.rotation) as GameObject;
 			
 			
-			bulletI.GetComponent<MoveBullet>().bullet_direction= transform.forward;
+			 bulletI.GetComponent<MoveBullet>().bullet_direction= transform.forward;
 			 
-		}
+		//}
    
  }
 	public void ShootWithDelay(float time_delay)

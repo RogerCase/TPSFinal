@@ -1,0 +1,159 @@
+-debug
+-target:library
+-nowarn:0169
+-langversion:4
+-out:Temp/Assembly-CSharp.dll
+-r:"C:/Program Files/Unity5.5/Editor/Data/Managed/UnityEngine.dll"
+-r:"C:/Program Files/Unity5.5/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll"
+-r:"C:/Program Files/Unity5.5/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll"
+-r:"C:/Program Files/Unity5.5/Editor/Data/UnityExtensions/Unity/PlaymodeTestsRunner/UnityEngine.PlaymodeTestsRunner.dll"
+-r:"C:/Program Files/Unity5.5/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll"
+-r:"C:/Program Files/Unity5.5/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll"
+-r:"C:/Program Files/Unity5.5/Editor/Data/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll"
+-r:Assets/Plugins/Mono.Data.Sqlite.dll
+-r:Assets/Plugins/System.Data.dll
+-r:"C:/Program Files/Unity5.5/Editor/Data/Managed/UnityEditor.dll"
+-define:UNITY_5_3_OR_NEWER
+-define:UNITY_5_4_OR_NEWER
+-define:UNITY_5_5_OR_NEWER
+-define:UNITY_5_5_0
+-define:UNITY_5_5
+-define:UNITY_5
+-define:UNITY_64
+-define:ENABLE_AUDIO
+-define:ENABLE_CACHING
+-define:ENABLE_CLOTH
+-define:ENABLE_DUCK_TYPING
+-define:ENABLE_GENERICS
+-define:ENABLE_MICROPHONE
+-define:ENABLE_MULTIPLE_DISPLAYS
+-define:ENABLE_PHYSICS
+-define:ENABLE_SPRITERENDERER_FLIPPING
+-define:ENABLE_SPRITES
+-define:ENABLE_TERRAIN
+-define:ENABLE_RAKNET
+-define:ENABLE_UNET
+-define:ENABLE_LZMA
+-define:ENABLE_UNITYEVENTS
+-define:ENABLE_WEBCAM
+-define:ENABLE_WWW
+-define:ENABLE_CLOUD_SERVICES_COLLAB
+-define:ENABLE_CLOUD_SERVICES_ADS
+-define:ENABLE_CLOUD_HUB
+-define:ENABLE_CLOUD_PROJECT_ID
+-define:ENABLE_CLOUD_SERVICES_UNET
+-define:ENABLE_CLOUD_SERVICES_BUILD
+-define:ENABLE_CLOUD_LICENSE
+-define:ENABLE_EDITOR_METRICS
+-define:ENABLE_EDITOR_METRICS_CACHING
+-define:INCLUDE_DYNAMIC_GI
+-define:INCLUDE_GI
+-define:PLATFORM_SUPPORTS_MONO
+-define:RENDER_SOFTWARE_CURSOR
+-define:INCLUDE_PUBNUB
+-define:ENABLE_PLAYMODE_TESTS_RUNNER
+-define:ENABLE_SCRIPTING_NEW_CSHARP_COMPILER
+-define:UNITY_STANDALONE_WIN
+-define:UNITY_STANDALONE
+-define:ENABLE_SUBSTANCE
+-define:ENABLE_RUNTIME_GI
+-define:ENABLE_MOVIES
+-define:ENABLE_NETWORK
+-define:ENABLE_CRUNCH_TEXTURE_COMPRESSION
+-define:ENABLE_UNITYWEBREQUEST
+-define:ENABLE_CLOUD_SERVICES
+-define:ENABLE_CLOUD_SERVICES_ANALYTICS
+-define:ENABLE_CLOUD_SERVICES_PURCHASING
+-define:ENABLE_CLOUD_SERVICES_CRASH_REPORTING
+-define:ENABLE_EVENT_QUEUE
+-define:ENABLE_CLUSTERINPUT
+-define:ENABLE_VIDEO
+-define:ENABLE_VR
+-define:ENABLE_WEBSOCKET_HOST
+-define:ENABLE_MONO
+-define:ENABLE_PROFILER
+-define:DEBUG
+-define:TRACE
+-define:UNITY_ASSERTIONS
+-define:UNITY_EDITOR
+-define:UNITY_EDITOR_64
+-define:UNITY_EDITOR_WIN
+-define:UNITY_TEAM_LICENSE
+Assets/AIOBject/AIchaser.cs
+Assets/AIOBject/Timer.cs
+Assets/AIOBject/carChaseAI.cs
+Assets/ASTAR_Threads/AStarNode.cs
+Assets/ASTAR_Threads/AStar_path_finding.cs
+Assets/ASTAR_Threads/Astar.cs
+Assets/ASTAR_Threads/Astar2Dlayout.cs
+Assets/ASTAR_Threads/IndexingEnemies.cs
+Assets/ASTAR_Threads/IndexingPlayer.cs
+Assets/ASTAR_Threads/MenuManager_Selector.cs
+Assets/CODES/Game_Controller.cs
+Assets/CODES/SceneAstar/PlaceCar.cs
+Assets/CODES/aa_MakeScene/aa_Scene_Maker.cs
+Assets/CODES/ab_Menu/AstarMenuwait.cs
+Assets/CODES/ab_Menu/MenuManager_level_1.cs
+Assets/CODES/ac_Threads/Example1Manager.cs
+Assets/CODES/ac_Threads/Example1Processor.cs
+Assets/CODES/ac_Threads/Game.cs
+Assets/CODES/ac_Threads/Grandma.cs
+Assets/CODES/ac_Threads/ThreadProcessor.cs
+Assets/CODES/ad_Tiles/CheckerScene_Ready.cs
+Assets/CODES/ad_Tiles/aa_hump.cs
+Assets/CODES/find_scene.cs
+Assets/CODES/rootScene.cs
+Assets/CODES/selectorscene/SelectorTest.cs
+Assets/DB/Scenes/4_Astar/test_database.cs
+Assets/DB/databasescripts/HighScore.cs
+Assets/DB/databasescripts/HighScoreScript.cs
+Assets/DataCheck/HighScoreManager.cs
+"Assets/Lighting Effects/Scripts/SimpleFlareSystem/FlareLookAt.cs"
+"Assets/Lighting Effects/Scripts/SimpleFlareSystem/ShaftVolume.cs"
+"Assets/Lighting Effects/Scripts/SimpleFlareSystem/SimpleFlare.cs"
+"Assets/Lighting Effects/Standard Assets/Character Controllers/Sources/Scripts/MouseLook.cs"
+Assets/ProjectFolder/AStar/Scripts/AStar/AStar.cs
+Assets/ProjectFolder/AStar/Scripts/AStar/GridManager.cs
+Assets/ProjectFolder/AStar/Scripts/AStar/Node.cs
+Assets/ProjectFolder/AStar/Scripts/AStar/PriorityQueue.cs
+Assets/ProjectFolder/AStar/Scripts/NewBehaviourScript.cs
+Assets/ProjectFolder/AStar/Scripts/TestCode/TestCode.cs
+Assets/ProjectFolder/scripts/Floorbase.cs
+Assets/ProjectFolder/scripts/Scene3Game/AI.cs
+Assets/ProjectFolder/scripts/Scene3Game/AstarCarRace.cs
+Assets/ProjectFolder/scripts/Scene3Game/AstarGame.cs
+Assets/ProjectFolder/scripts/Scene3Game/Control_Child_Creation.cs
+Assets/ProjectFolder/scripts/Scene3Game/PathFinding.cs
+Assets/ProjectFolder/scripts/Scene3Game/RandomScene.cs
+Assets/ProjectFolder/scripts/Scene3Game/controllerCar.cs
+Assets/ProjectFolder/scripts/Scene3Game/menumanagerGame.cs
+Assets/ProjectFolder/scripts/Scene3Game/scene4database/menuManagerDataBasr.cs
+Assets/ProjectFolder/scripts/TileObjects.cs
+Assets/ProjectFolder/scripts/floor.cs
+Assets/ProjectFolder/scripts/makePrefab.cs
+Assets/ProjectFolder/scripts/scene1menu/menuScene1manager.cs
+Assets/ProjectFolder/scripts/scene1menu/scene_1_Menu.cs
+Assets/ProjectFolder/scripts/scene2help/menuManager_level_help.cs
+Assets/ProjectFolder/scripts/test2D/ArrayLayout.cs
+Assets/ProjectFolder/scripts/test2D/TestScript2D.cs
+Assets/TestMaterialObjects/CarControl/Scripts/CarControl.cs
+Assets/TestMaterialObjects/CarControl/Scripts/CarControlCS.cs
+Assets/TestMaterialObjects/CarControl/Scripts/Finish.cs
+Assets/TestMaterialObjects/CarControl/Scripts/Rotate.cs
+Assets/aaaa_SuperTest/AIforTPS.cs
+Assets/aaaaa_Player/DUMMY/BulletDummy/MoveBullet.cs
+Assets/aaaaa_Player/DUMMY/PlayerFPS/aa_TPS/CharacterControllerLogic_T.cs
+Assets/aaaaa_Player/ThirdPersonCamera_M.cs
+Assets/aaaaa_Player/ab_scene_1/shoot.cs
+Assets/fire.cs
+Assets/menufire.cs
+Assets/wheelparameter/CameraChase.cs
+Assets/wheelparameter/SpeedoMeter.cs
+Assets/zz_FloorNewTest/Prefab/spawner.cs
+Assets/zz_FloorNewTest/camerachase.cs
+-r:"C:\Program Files\Unity5.5\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\System.Runtime.Serialization.dll"
+-r:"C:\Program Files\Unity5.5\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\System.Xml.Linq.dll"
+-r:"C:\Program Files\Unity5.5\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\UnityScript.dll"
+-r:"C:\Program Files\Unity5.5\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\UnityScript.Lang.dll"
+-r:"C:\Program Files\Unity5.5\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\Boo.Lang.dll"
+-sdk:2.0
